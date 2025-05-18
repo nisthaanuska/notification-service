@@ -16,19 +16,22 @@ A simple yet powerful notification service built with *FastAPI* and *MongoDB* to
 
 ---
 
-## 🏗 Project Structure
+### 🏗 Project Structure
 
-notification_service/
+
+notification-service/
+│
 ├── app/
-│ ├── main.py # Main API routes
-│ ├── schemas.py # Pydantic models
-│ ├── models.py # Custom MongoDB ObjectId handler
-│ ├── database.py # MongoDB client setup
-│ ├── config.py # Environment config loader
-│ └── utils.py # Background sender logic
-├── .env # Environment variables
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
+│   ├── main.py                    # FastAPI app entry point
+│   ├── models.py                  # MongoDB models and PyObjectId
+│   ├── schemas.py                 # Pydantic schemas
+│   ├── database.py                # MongoDB connection logic
+│   ├── config.py                  # Loads environment variables
+│
+├── .env                           # Environment variables file
+├── requirements.txt               # Python dependencies
+├── README.md                      # Project documentation
+
 
 
 ---
